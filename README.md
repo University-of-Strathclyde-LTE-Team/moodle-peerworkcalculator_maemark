@@ -14,3 +14,6 @@ The MAEMark CF calculator is based heavily on webPA but applies the following ch
 
 * The calculator ovverrides the actual grade calculation and exports contributions factors (CFs) in their place, so that these can be handled in Gradebook with greater flexiblity. This means that in the 'Final weighted grade' field in the UI the grader will only see CFs- choosing this calculator entails a concious choice to handle the weighting, cap and penalty in gradebook.
    
+## Supported Versions
+
+* This plugin requires the Peer Work module to work. It has been tested with Peer Work v4.5.0 and Moodle versions 4.0.
