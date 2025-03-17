@@ -22,7 +22,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'MAEMark CF Peer Assessment calculator';
+$string['pluginname'] = 'MAEMark CF Peer Assessment Calculator';
 $string['privacy:metadata'] = 'This calculator does not store data.';
 $string['webpa'] = 'MAEMark CF';
 //$string['gradeitem'] = 'Grade item';
