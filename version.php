@@ -24,6 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2025031700;
+$plugin->version = 20250317010;
 $plugin->requires = 2019111200;  // Requires this Moodle version.
 $plugin->component = 'peerworkcalculator_maemark_cf';
