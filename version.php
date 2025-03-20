@@ -17,7 +17,7 @@
 /**
  * Defines the version of the subplugin
  *
- * @package    peerworkcalculator_maemark_cf
+ * @package    peerworkcalculator_maemarkcf
  * @copyright  2025 CT
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 $plugin->version = 20250317011;
 $plugin->release = '0.1.1';
 $plugin->requires = 2019111200;  // Requires this Moodle version.
-$plugin->component = 'peerworkcalculator_maemark_cf';
+$plugin->component = 'peerworkcalculator_maemarkcf';
