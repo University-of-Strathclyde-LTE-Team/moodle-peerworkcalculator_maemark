@@ -17,13 +17,13 @@
 /**
  * WebPA calculator.
  *
- * @package    peerworkcalculator_maemark_cf
+ * @package    peerworkcalculator_maemarkcf
  * @copyright  2025 CT
  * @author     Chris Triantafyllou <chris.triantafyllou@strath.ac.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace peerworkcalculator_maemark_cf;
+namespace peerworkcalculator_maemarkcf;
 
 use mod_peerwork\pa_result;
 use mod_peerwork\peerworkcalculator_plugin;
@@ -31,10 +31,11 @@ use mod_peerwork\peerworkcalculator_plugin;
 /**
  * MAEMark CF calculator.
  *
- * @package    peerworkcalculator_maemark_cf
+ * @package    peerworkcalculator_maemarkcf
  * @copyright  2025 CT
  * @author     Chris Triantafyllou <chris.triantafyllou@strath.ac.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @see        https://github.com/amandadoughty/moodle-mod_peerwork/blob/main/calculator/webpa/classes/calculator.php
  */
 class calculator extends peerworkcalculator_plugin {
 
@@ -44,7 +45,7 @@ class calculator extends peerworkcalculator_plugin {
      * @return string
      */
     public function get_name() {
-        return get_string('webpa', 'peerworkcalculator_maemark_cf');
+        return get_string('webpa', 'peerworkcalculator_maemarkcf');
     }
 
     /**

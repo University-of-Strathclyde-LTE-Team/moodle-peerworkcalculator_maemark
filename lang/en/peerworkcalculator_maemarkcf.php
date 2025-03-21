@@ -17,7 +17,7 @@
 /**
  * Lang strings.
  *
- * @package   peerworkcalculator_maemark_cf
+ * @package   peerworkcalculator_maemarkcf
  * @copyright 2025 CT
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

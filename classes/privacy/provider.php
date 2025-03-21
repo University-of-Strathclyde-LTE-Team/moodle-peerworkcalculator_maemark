@@ -17,17 +17,17 @@
 /**
  * Privacy Subsystem implementation for peerworkcalculator_maemark_cf.
  *
- * @package    peerworkcalculator_maemark_cf
+ * @package    peerworkcalculator_maemarkcf
  * @copyright  2025 CT
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace peerworkcalculator_webpa\privacy;
+namespace peerworkcalculator_maemarkcf\privacy;
 
 use core_privacy\local\metadata\null_provider;
 
 /**
- * Privacy Subsystem for peerworkcalculator_maemark_cf implementing null_provider.
+ * Privacy Subsystem for peerworkcalculator_maemarkcf implementing null_provider.
  *
  * @copyright  2025 CT
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
