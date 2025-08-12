@@ -55,39 +55,6 @@ class calculator extends peerworkcalculator_plugin {
      * under which an array of the grades they gave to other members indexed
      * by member ID.
      *
-     * In the example below, Alice rated Bob 4, and Elaine did not submit any marks..
-     *
-     * [
-     *  'alice' => [
-     *       'alice' => [2,2],
-     *       'bob' => [1,3],
-     *       'claire' => [3, 0],
-     *       'david' => [1,1],
-     *       'elaine' => [1,0]
-     *   ],
-     *   'bob' => [
-     *       'alice' => [2,1],
-     *       'bob' => [2,3],
-     *       'claire' => [2,1],
-     *       'david' => [1,1],
-     *       'elaine' => [0,0]
-     *   ],
-     *   'claire' => [
-     *       'alice' => [2,2],
-     *       'bob' => [2,2],
-     *       'claire' => [2,2],
-     *       'david' => [2,2],
-     *       'elaine' => [2,2]
-     *   ],
-     *   'david' => [
-     *       'alice' => [2,1],
-     *       'bob' => [3,2],
-     *       'claire' => [2,2],
-     *       'david' => [1,2],
-     *       'elaine' => [1,0]
-     *   ],
-     *   'elaine' => []
-     * ];
      *
      * @param array $grades The list of marks given.
      * @param array $noncompletionfactor The non-completion mask to fix the calculation issue.
@@ -158,6 +125,18 @@ class calculator extends peerworkcalculator_plugin {
         }
 
         //webpascores are the contribution factors
+
+        // Handle special case (Case E): if only one member completed the assessment, set their score to 1.0
+        $numcompletors = array_sum($noncompletionfactor);
+        if ($numcompletors == 1) {
+            foreach ($memberids as $memberid) {
+                if ($noncompletionfactor[$memberid] == 1) {
+                    $webpascores[$memberid] = 1.0;
+                } else {
+                    $webpascores[$memberid] = 0;
+                }
+            }
+        }
 
         // Apply the fudge factor to all scores received. (Obsolete)
         $nummembers = count($memberids);
